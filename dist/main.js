@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log(\"Hello Sherif!\");\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("throw new Error(\"Module parse failed: Unexpected token (5:9)\\nYou may need an appropriate loader to handle this file type.\\n| \\n| const Index = () => {\\n>   return <div>Hello Sherif!</div>\\n| };\\n| \");\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

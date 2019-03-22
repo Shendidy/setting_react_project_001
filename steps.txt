@@ -86,3 +86,8 @@ NB, babel is the dependency responsible for transpiling any ES6 to ES5 since not
 14- Add the following line just before the last curly bracket in webpack.config.js
 
       plugins: [htmlPlugin]
+
+15- CLI: npm i babel-loader@7 -D
+
+15- CLI: npm run start
+NB, you should then see index.html generated for you in the dist folder!
