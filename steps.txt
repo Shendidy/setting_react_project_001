@@ -1,0 +1,17 @@
+1- CLI: npm init
+
+2- CLI: npm i webpack webpack-cli -D
+
+3- Create the src folder
+
+4- Create index.js in src folder
+
+5- Fix package.json to replace script "test" with this:
+      "scripts": {
+        "start": "webpack --mode development",
+        "build": "webpack --mode production"
+      },
+
+NOTE: if you type in the CLI now "npm run start" it will create the folder dist, and a file inside it main.js. you don't need to do so, but it's worth knowing it!
+
+6- CLI: npm install react react-dom -S  (-S to save it for all project environments, not just the dev. NB, you can use 'i' instead of 'install'!)
