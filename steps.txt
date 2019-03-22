@@ -73,3 +73,12 @@ NB, babel is the dependency responsible for transpiling any ES6 to ES5 since not
       </html>
 
 12- CLI: npm i html-webpack-plugin -D
+
+13- Edit webpack.config.js to tell it what to do with html. add the following to the top of the file:
+
+      const HtmlWebPackPlugin = require("html-webpack-plugin");
+
+      const htmlPlugin = new HtmlWebPackPlugin( {
+        template: "./src/index.html",
+        filename: "./index.html"
+      });
