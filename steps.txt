@@ -18,3 +18,24 @@
 NOTE: if you type in the CLI now "npm run start" it will create the folder dist, and a file inside it main.js. you don't need to do so, but it's worth knowing it!
 
 6- CLI: npm install react react-dom -S  (-S to save it for all project environments, not just the dev. NB, you can use 'i' instead of 'install'!)
+
+7- CLI: npm i babel-core babel-loader babel-preset-env babel-preset-react -D
+NB, babel is the dependency responsible for transpiling any ES6 to ES5 since not all browsers understand ES6 yet. "-D" is to tell our application that babel is only needed for the development side of our app, not for the production side.
+
+8- Create file webpack.config.js in the root folder and fill it with:
+
+      module.exports = {
+        module: {
+          rules: [
+            {
+              test: /\.js$/,
+              exclude: /node_modules/,
+              use: {
+                loader: "babel_loader"
+              }
+            }
+          ]
+        }
+      };
+
+9-
