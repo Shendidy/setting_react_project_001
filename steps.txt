@@ -71,3 +71,5 @@ NB, babel is the dependency responsible for transpiling any ES6 to ES5 since not
           <div id="index"></div>
         </body>
       </html>
+
+12- CLI: npm i html-webpack-plugin -D
