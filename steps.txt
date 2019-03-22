@@ -57,4 +57,17 @@ NB, babel is the dependency responsible for transpiling any ES6 to ES5 since not
 
   NB, both lines importing React and ReactDom are for ensuring our application can generate and translate jsx into html. Index const is a component to include any jsx that shall be translated to html that we want to render into our pages. and finally, the translation of the last line is: use render function from ReactDom that we imported above to place component Index above (or can be stored in another file given that we also import that file, and that it has the export default set properly) and add it to our document in the element with id 'index' (we can name the id of that element anything we want, I believe it's usually names 'root'!)
 
-11-
+11- Create index.html file in src folder and fill it with:
+
+      <!DOCTYPE html>
+      <html lang="en" dir="ltr">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale-1.0">
+          <meta http-http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>React tutorial</title>
+        </head>
+        <body>
+          <div id="index"></div>
+        </body>
+      </html>
