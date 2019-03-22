@@ -1,6 +1,9 @@
 1- CLI: npm init
 
-2- CLI: npm i webpack webpack-cli -D
+2- CLI: npm i webpack webpack-cli -D (NB, you might need to add the following 2 lines before being able to add . in git repository
+  a- $ git config --global core.autocrlf false
+  b- $ git config --global core.safecrlf false
+)
 
 3- Create the src folder
 
