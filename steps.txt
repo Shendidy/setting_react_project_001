@@ -38,4 +38,8 @@ NB, babel is the dependency responsible for transpiling any ES6 to ES5 since not
         }
       };
 
-9-
+9- Create a .bablerc file in the root folder and fill it with:
+
+      {
+        "presets": ["env", "react"]
+      }
